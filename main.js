@@ -9,6 +9,15 @@ function scrollToSection(event) {
   }, 500);
 }
 
+$('#more').on('click', scrollToSection);
+function scrollToSection(event) {
+  event.preventDefault();
+    var $section = $($(this).attr('href'));
+    $('html, body').animate({
+    scrollTop: $section.offset().top
+  }, 500);
+}
+
 // var movies = ["images/thegoonies.jpg", "images/matilda.jpg", "images/princess.jpg", "images/labyrinth.jpg"];
 //
 // movies.forEach(function(movie){

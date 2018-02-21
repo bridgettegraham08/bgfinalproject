@@ -31,31 +31,8 @@ nav {
  background-color: rgb(191, 65, 107);
  font-size: 1.5em;
  letter-spacing: 1px;
- z-index: 100;
-
- /* transition: height 1s, line-height 1s; */
+ z-index: 99;
 }
-
-/* .scrollnav {
-  height: 60px !important;
-  line-height: 60px !important;
-}
-
-.scrollnav nav a {
-  font-size: 12px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.counter {
-  width: 20px;
-  height: 20px;
-  background: black;
-  color: #fff;
-  position: fixed;
-  top: 120px;
-  right: 0;
-} */
 
 nav a {
   text-decoration: none;
@@ -79,31 +56,50 @@ nav a {
   min-height: 100vh;
 }
 
-/* a img {
+.footerwide {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px 0px 60px 0px;
+  min-height: 30vh;
+}
+
+#logo {
   margin: -20px 0px -5px 30px;
-  width: 100px;
   float: left;
+}
+
+#chifflogo {
+  width: 80%;
+  margin-top: -10px;
   z-index: 100;
-} */
-/* .social{
-  float: right;
-  width: 50px;
-} */
+}
 
 .carousel {
   width: 1430px;
   height: 600px;
+  margin-bottom: 20px;
+
 }
 
 .cycle-slideshow {
   width: 1430px;
+  z-index: 98;
 }
-/* #widefooter {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 80px 0px 60px 0px;
-  min-height: 10vh;
-} */
+
+#more {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  background-color: rgb(191, 65, 107);
+  font-size: 1.5em;
+  margin: 20px 0px 4px 680px;
+}
+
+#more:hover {
+  background-color: rgb(242, 106, 14);
+  color: white;
+  text-decoration: none;
+}
 
 .nowshowing {
   flex-direction: rows;
@@ -148,7 +144,7 @@ nav a {
   text-align: center;
 }
 
-#sessiontimes h1{
+#about h1{
   color: black;
   text-align: center;
 }
@@ -156,7 +152,7 @@ nav a {
 #contactus h1{
 color: white;
 text-align: center;
-margin-top: 0px;
+margin-top: 40px;
 }
 
 #venues h1 {
@@ -176,7 +172,8 @@ text-align: center;
 
 #contactus {
   background-color: rgb(242, 106, 14);
-  min-height: 90vh;
+  width:100%;
+  flex-grow: 1;
 }
 
 #contact p {
@@ -187,75 +184,33 @@ text-align: center;
 #about {
   color: black;
   text-align: center;
+  margin-bottom: -10px;
 }
 
-/* venues  */
-
-#venueflexcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#siteone {
-  background-color: rgb(226, 224, 222);
-  color: black;
-  width: 600px;
-  height: 50%;
-  margin: 0px 10px -50px 10px;
-}
-
-#siteone a {
-  padding: 5px;
-  background-color: ;
-}
-
-#siteone p {
-  margin-left: 10px;
-}
-
-#sitetwo p {
-  margin-left: 10px;
-}
-
-#sitethree p {
-  margin-left: 10px;
-}
-
-.lidologo {
-  width:100px;
-  margin-left: 160px;
-}
-
-.classiclogo {
-  width:100px;
-  margin-left: 180px;
-  margin-top: 10px;
-}
-
-.cameologo {
-  width:100px;
-  margin-left: 190px;
-  margin-top: 30px;
-}
-
-#sitetwo{
-  background-color: rgb(226, 224, 222);
-  width: 600px;
-  height: 100%;
-  margin: 0px 10px -50px 10px;
-
-}
-
-#sitethree {
-  background-color: rgb(226, 224, 222);
-  width: 600px;
-  height: 100%;
-  margin: 0px 10px -50px 10px;
-}
 
 /* about */
 
+#chiffbanner {
+  width: 100%;
+  height: 500px;
+  margin-top: -20px;
+
+}
+
+#aboutcopy {
+  margin: 10px 70px 0px 70px;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#aboutcopy h2 {
+  letter-spacing: 2px;
+}
+
+.aboutbackground {
+display: none;
+
+}
 
 
 
@@ -265,10 +220,10 @@ text-align: center;
 .moviebackground {
   width: 100%;
   height: 200px;
-  background-color:rgb(242, 106, 14);
+  background-color: rgb(242, 106, 14);
   position: absolute;
   margin-top: 120px;
-  opacity: .6;
+  opacity: .9;
 }
 
 .nsmovies {
@@ -279,6 +234,7 @@ text-align: center;
 -moz-transition: opacity 2s ease-in-out;
 -o-transition: opacity 2s ease-in-out;
 transition: opacity 2s ease-in-out;
+
 }
 
 .csmovies{
@@ -292,6 +248,9 @@ transition: opacity 2s ease-in-out;
 transition: opacity 2s ease-in-out;
 }
 
+.moviecontainer {
+  margin-top: 60px;
+}
 
 .nsmovies.transparent {
   opacity:0;
@@ -362,12 +321,79 @@ display: none;
   margin-left: 60px;
 }
 
+/* venues  */
+
+#venueflexcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#siteone {
+  /* background-color: rgb(204, 230, 255); */
+  color: black;
+  width: 30%;
+  height: 100%;
+  margin: 0px 10px -50px 10px;
+}
+
+#sitetwo{
+  /* background-color: rgb(204, 230, 255); */
+  width: 30%;
+  height: 100%;
+  margin: 0px 10px -50px 10px;
+
+}
+
+#sitethree {
+  /* background-color: rgb(204, 230, 255); */
+  width: 30%;
+  height: 100%;
+  margin: 0px 10px -50px 10px;
+}
+
+
+#siteone a {
+  padding: 5px;
+  background-color: ;
+}
+
+#siteone p {
+  margin-left: 10px;
+}
+
+#sitetwo p {
+  margin-left: 10px;
+}
+
+#sitethree p {
+  margin-left: 10px;
+}
+
+.lidologo {
+  width:25%;
+  margin-left: 38%;
+  margin-top: 10%;
+}
+
+.classiclogo {
+  width:25%;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+.cameologo {
+  width:25%;
+  margin-left: 38%;
+  margin-top: 10%;
+}
+
 
 /* Form */
 
 input {
   padding: 20px;
-  width: 266px;
+  width: 264px;
   margin: 10px, 0px, 0px, 0px;
 }
 
@@ -378,7 +404,7 @@ margin: 0px 260px 0px 228px;
 #message {
   min-height: 150px;
   border: 0px, solid;
-  width: 895px;
+  width: 95%;
   margin:5px 0px 0px 0px;
 }
 
@@ -411,29 +437,196 @@ margin: 0px 260px 0px 228px;
   display: none;
 }
 
-
-/* carousel */
-
-/* #image-container-wrapper{
-    padding-top: none;
-     width:1920;
-     height:617px;
-     overflow: hidden;
-     margin-left: -55px;
-     margin-top: none;
+footer {
+  background-color: rgb(191, 65, 107);
+  width: 100%;
+  height: 100px;
 }
 
-#image-container{
-     width:1920px; */
+
+
+@media screen and (max-width:30em) {
+
+  body {
+    column-count: 1;
+
+  }
+
+  #logo {
+    margin: -20px 0px -5px 45px;
+    float: left;
+  }
+
+  #chifflogo {
+    width: 70%;
+    margin-top: -10px;
+  }
+
+  .cycle-slideshow {
+    display: none;
+  }
+
+
+  form {
+    width: 50%;
+    align-content: center;
+    margin: 0px 0px 0px 100px;
+  }
+
+  form input {
+    margin-right: 50px;
+    width: 70%;
+  }
+
+  #contactus h1{
+    font-size: 26px;
+    margin-top: 130px;
+  }
+
+  #message {
+    width: 70%;
+    height: 100%;
+  }
+
+  #submit {
+    border-radius: 2px;
+    font-weight: 500;
+    padding: 12px 0;
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    color:rgb(242, 106, 14);
+  }
+
+
+  #home {
+  background-image: url(images/chiffposter1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+
+  margin-top: 80px;
+}
+#venues h1{
+  font-size: 30px;
+  margin-top: 130px;
+}
+#venueflexcontainer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#siteone {
+  width: 100%;
+  margin: 0px 0px 5px 0px;
+}
+#sitetwo {
+  width: 100%;
+  margin: 5px 0px 0px 0px;
+}
+#sitethree {
+  width: 100%;
+  margin: 5px 0px 0px 0px;
+}
+.moviebackground {
+display: none;
 
 }
-/* img{
+.nsmovies {
+  flex-direction: column;
+}
 
-     width:1370px;
-     height: 1000px;
-     transition: margin-left 2s;
-} */
-/*
-.img-moved-left{
-     margin-left:-500px;
-} */
+.poster {
+  margin-top: 5px;
+  margin-left: 0px;
+
+}
+
+#movies h1 {
+  font-size: 30px;
+  margin-top: 130px;
+}
+
+.nowshowing {
+  font-size: 1em;
+}
+
+.twevents{
+  flex-direction: column;
+}
+
+.nwevents {
+  flex-direction: column;
+}
+
+#gooniesimg {
+  width: 100%;
+  height: 100%;
+  margin-left: -32px;
+}
+
+#labyrinthimg {
+  width: 100%;
+  height: 100%;
+  margin-left: -32px;
+  margin-top: 10px;
+}
+
+#princessimg {
+  width: 100%;
+  height: 100%;
+  margin-left: -35px;
+}
+
+#matildaimg {
+  width: 100%;
+  height: 100%;
+  margin-left: -32px;
+  margin-top: 10px;
+}
+
+#events h1 {
+  font-size: 30px;
+  margin-top: 130px;
+
+}
+.thisweek {
+  font-size: 1em;
+}
+
+#chiffbanner {
+  display: none;
+}
+
+#about h1 {
+  margin-top: 130px;
+  font-size: 30px;
+}
+
+#aboutcopy h2 {
+  font-size: 24px;
+
+}
+
+#aboutcopy {
+  font-size: 20px;
+}
+
+#home {
+background-image: url(images/chiffposter1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+width: 100%;
+margin-top: 115px;
+}
+
+
+}
